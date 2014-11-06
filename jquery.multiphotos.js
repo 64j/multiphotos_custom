@@ -38,7 +38,7 @@
             $(this).parent().sortable("refresh");
             return item
         }).bind('sync', function() {
-            if (jQuery(this).parent().find('.item input').length > 0) {
+            if (jQuery(this).parent().find('.item input').length) {
                 var json = {};
                 json.fieldValue = [];
                 $(this).parent().find('.item input').each(function() {
