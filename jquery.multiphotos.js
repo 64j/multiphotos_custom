@@ -123,7 +123,8 @@
         });
 
         function thumb(src, w, h) {
-            return cfg.baseUrl + (src || '').replace(/(.*\/)(.*\/)(.*)/, "$1.thumbs/$2$3")
+            //return cfg.baseUrl + (src || '').replace(/(.*\/)(.*\/)(.*)/, "$1.thumbs/$2$3");
+			return cfg.baseUrl + (src || '')
         }
         return this
     }
